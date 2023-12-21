@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFirstFragment">
+    <fragment
+        android:id="@+id/loginFirstFragment"
+        android:name="com.example.abschluss_projekt_android_studio.ui.LoginFirstFragment"
+        android:label="LoginFirstFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.abschluss_projekt_android_studio.ui.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/notesFragment2"
+        android:name="com.example.abschluss_projekt_android_studio.ui.NotesFragment"
+        android:label="NotesFragment" />
+    <fragment
+        android:id="@+id/passwordResetFragment2"
+        android:name="com.example.abschluss_projekt_android_studio.ui.PasswordResetFragment"
+        android:label="PasswordResetFragment" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.abschluss_projekt_android_studio.ui.RegisterFragment"
+        android:label="RegisterFragment" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.abschluss_projekt_android_studio.ui.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>
