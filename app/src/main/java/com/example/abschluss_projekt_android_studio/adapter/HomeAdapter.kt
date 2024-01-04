@@ -2,7 +2,9 @@ package com.example.abschluss_projekt_android_studio.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.abschluss_projekt_android_studio.R
 import com.example.abschluss_projekt_android_studio.data.model.HauptItems
 import com.example.abschluss_projekt_android_studio.databinding.ItemHomeBinding
 
@@ -26,5 +28,21 @@ class HomeAdapter(
 
         holder.binding.ivImage.setImageResource(item.image)
         holder.binding.tvHauptName.text = item.name
+
+        holder.binding
+
+
+        holder.binding.cvHome.setOnClickListener {
+            when(item.name){
+                "Private Notizen" -> {
+                    holder.itemView.findNavController().navigate(R.id.notesFragment2)
+                }
+                "Gemeinsame Notizen"->{
+                    holder.itemView.findNavController().navigate(R.id.notesFragment2)
+                }
+            }
+
+
+        }
     }
 }

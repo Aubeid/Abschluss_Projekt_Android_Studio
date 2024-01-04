@@ -23,6 +23,7 @@
         android:id="@+id/rv_Fotos"
         android:layout_width="0dp"
         android:layout_height="117dp"
+        android:orientation="horizontal"
         android:requiresFadingEdge="horizontal"
         android:scrollbars="horizontal"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
